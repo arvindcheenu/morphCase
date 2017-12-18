@@ -1,4 +1,4 @@
-package humanize;
+package microUtil;
 public class morphCase {
 	private String normalCase;
 	public String getNormalCase() {
