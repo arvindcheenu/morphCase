@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import humanize.morphCase;
+import microUtil.morphCase;
 public class StringCaseChange {
 	private static Scanner scan = new Scanner (System.in);
 	private static morphCase normalCase;
