@@ -10,7 +10,7 @@
  */
 package microUtil;
 /*
- * @changeCase.class : This class is used for generating different types of string cases
+ * @morphCase.class : This class is used for generating different types of string cases
  * 					   from input string. 
  * 					   For Output tests check StringCaseChange.java
  */
