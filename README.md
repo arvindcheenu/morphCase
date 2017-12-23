@@ -35,7 +35,7 @@ A micro Java library to change the cases of Strings. More variations will be add
 
 ## Usage 
 
-Simply add the JAR file in this repository and include it as an external dependency library while creating any project.
+Simply add the JAR file in this repository and include it as an external dependency library (by selecting `Add External JAR Libraries...` in **Eclipse** while creating a new project.) while creating any project.
 
 ## License
 
