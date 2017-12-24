@@ -31,7 +31,8 @@ A micro Java library to change the cases of Strings. More variations will be add
 .*toPascalCase* () | ```morphCase test = new morphCase("TEST STRING");   test.toPascalCase();```|`TestString`| returns String converted to Pascal Case.
 .*toPathCase* () | ```morphCase test = new morphCase("TEST STRING");   test.toPathCase();```|`test/string`| returns String converted to Path Case.
 .*toSnakeCase* () | ```morphCase test = new morphCase("TEST STRING");   test.toSnakeCase();```|`test_string`| returns String converted to Snake Case.
-.*swapCase* () |  ```morphCase test = new morphCase("Test String");   test.swapCase();```|`tEST sTRING`| returns String with swapped Case.
+.*toInvertCase* () |  ```morphCase test = new morphCase("Test String");   test.toInvertCase();```|`tEST sTRING`| returns String with swapped Case.
+.*toPercentCase* () |  ```morphCase test = new morphCase("Test String");   test.toPercentCase();```|`Test20%String`| returns String with Percent Case, used for URL encoding of Reserved and Non-UnReserved Characters.
 
 ## Usage 
 
