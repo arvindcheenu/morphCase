@@ -17,6 +17,7 @@ public class StringCaseChange {
 		System.out.println("toPascalCase		: "+ normalCase.toPascalCase());
 		System.out.println("toPathCase		: "+ normalCase.toPathCase());
 		System.out.println("toSnakeCase		: "+ normalCase.toSnakeCase());
-		System.out.println("swapCase			: "+ normalCase.swapCase());
+		System.out.println("toPercentCase		: "+ normalCase.toPercentCase());
+		System.out.println("toInvertCase		: "+ normalCase.toInvertCase());
 	}
 }
