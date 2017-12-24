@@ -74,12 +74,28 @@ public class morphCase {
 	    }
 	    return new String(chars);
 	}
-	public String toTitleCase() {		String[] strarr = ((this.normalCase).toLowerCase()).split(" ");
-	for (int i=0; i< strarr.length; i++) {
+	public String toTitleCase() {		
+	    String[] strarr = ((this.normalCase).toLowerCase()).split(" ");
+	    for (int i=0; i< strarr.length; i++) {
 		strarr[i] = strarr[i].substring(0,1).toUpperCase() + strarr[i].substring(1).toLowerCase();
+	    }
+	    return String.join(" ",strarr);
 	}
-	return String.join(" ",strarr);
+	public String toPercentCase() {
+		String strEncoded = "";
+	    for(int i = 0; i < this.normalCase.length(); i++) {
+	    		int hex = (int)(this.normalCase.charAt(i));
+	        if ((hex >= 65) && (hex <= 90)||
+	        		(hex >= 97) && (hex <= 122)||
+	        		(hex >= 48) && (hex <= 57) ||
+	        		(hex == 46) || (hex == 45) ||
+	        		(hex == 95) || (hex == 126) )
+	        		strEncoded += this.normalCase.charAt(i);
+	        else {
+		        String strHex = Integer.toHexString(this.normalCase.charAt(i));
+	        		strEncoded += '%' + strHex;
+	        }
+	    }
+	    return strEncoded;
 	}
-
-
 }
