@@ -61,7 +61,7 @@ public class morphCase {
 		String[] strarr = ((this.normalCase).toLowerCase()).split(" ");
 		return String.join("_",strarr);
 	}
-	public String swapCase() {
+	public String toInvertCase() {
 	    char[] chars = this.normalCase.toCharArray();
 	    for (int i = 0; i < chars.length; i++){
 	        char c = chars[i];
